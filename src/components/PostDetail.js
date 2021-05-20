@@ -51,5 +51,5 @@ const PostDetail = (props) => {
     </div>
     )
 };
-
+    
 export default PostDetail;
