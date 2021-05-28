@@ -11,7 +11,7 @@ const PostDetail = (props) => {
         createdDate: "",
         commentNum: 0,
         viewCount: 1
-     });
+    });
 
     useEffect(() => {
         axios.get(`https://blog-tutoring.herokuapp.com/boards/1/posts/${props.postId}`)
