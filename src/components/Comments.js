@@ -10,7 +10,7 @@ const Comments = (props) => {
     const [comments, setComments] = useState([]);
 
     function getComments() {
-        axios.get(`https://blog-tutoring.herokuapp.com/boards/1/posts/${props.postId}/comments`)
+        axios.get(`https://blog-tutoring.herokuapp.com/posts/${props.postId}/comments`)
             .then(res => {
                 setComments(res.data.comments)
             })
@@ -35,14 +35,14 @@ const Comments = (props) => {
 
     let updateComment = e => {   //댓글 작성창
         setComment({
-            ...comment,
+            userId: 1,
             content: e.target.value
         });
     }
 
     let addComment = () => {     //댓글쓰기 buttonClick
       alert(`${comment.content}를 등록합니다.`);
-      axios.post(`https://blog-tutoring.herokuapp.com/boards/1/posts/${props.postId}/comments`, comment)
+      axios.post(`https://blog-tutoring.herokuapp.com/posts/${props.postId}/comments`, comment)
         .then(res => {
             getComments();
             setComment({
