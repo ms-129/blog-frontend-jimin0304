@@ -26,7 +26,7 @@ const WritePost = (props) => {
 
     let addPost = () =>  {     //글쓰기 buttonClick
         alert(`${post.title}을(를) 등록합니다.`);
-        axios.post("https://blog-tutoring.herokuapp.com/boards/1/posts", post)
+        axios.post("https://blog-tutoring.herokuapp.com/posts", post)
             .then(res => {
                 console.log(res.data);
                 props.history.push(`/posts/${res.data.postId}`);

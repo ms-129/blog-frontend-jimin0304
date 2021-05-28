@@ -14,7 +14,7 @@ const PostDetail = (props) => {
     });
 
     useEffect(() => {
-        axios.get(`https://blog-tutoring.herokuapp.com/boards/1/posts/${props.postId}`)
+        axios.get(`https://blog-tutoring.herokuapp.com/posts/${props.postId}`)
             .then(res => {
                 setPost(res.data)
             })
@@ -30,6 +30,7 @@ const PostDetail = (props) => {
                 alert(e.response.data.message)
             })
     }, []);
+
     return (
         <div>
         <table align="center" border="1" width="1000" height="400">
@@ -51,5 +52,5 @@ const PostDetail = (props) => {
     </div>
     )
 };
-
+    
 export default PostDetail;
