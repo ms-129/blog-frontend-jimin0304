@@ -1,0 +1,79 @@
+body {
+    font:14px/1.8 Arial, Helvetica, sans-serif;
+}
+.frame {
+    margin: 0 auto;
+    border: 1px solid #aaa;
+}
+.header {
+    padding: 10px 10px;
+    text-align: center;
+    background: #eee;
+    margin-bottom: 20px;
+}
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    background: #5457de;
+    color: #fff;
+    display: inline-block;
+    /*padding: 0 5px;*/
+    width: 150px;
+}
+.container {
+    padding: 15px 20px;
+    overflow: hidden;
+    height: 100%;
+}
+
+.big-nav {
+    float: left;
+    width: 170px;
+    background: #333;
+    color: #fff;
+    margin: 50px 10px 0;
+}
+.login {
+    width: 130px;
+    height: 130px;
+    background: lemonchiffon;
+    color: black;
+    display: inline-block;
+}
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+}
+.nav-item {
+    margin: 4px 0;
+}
+.nav-link {
+    display: block;
+    text-decoration: none;
+    padding: 4px 10px;
+    color: #fff;
+}
+.nav-link:hover {
+    background: #5457de;
+}
+.content {
+    width: 1070px;
+    float: left;
+}
+.lists{
+    float: left;
+}
+.chatting{
+    float: left;
+    width: 200px;
+    height: 450px;
+    background: darksalmon;
+    color: #fff;
+    margin: 30px 10px 0;
+}
+.footer {
+    text-align: center;
+    border-top: 1px solid #aaa;
+    font-size: 12px;
+}
