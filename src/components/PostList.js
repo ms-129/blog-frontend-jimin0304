@@ -23,10 +23,14 @@ const PostList = (props) => {
         }
     });
 
-    const [pageInfo, setPageInfo] = useState({page:0, size:1});
+    const [pageInfo, setPageInfo] = useState({page:0, size:15});
     useEffect( ()=>{
         updatePage()
     },[]);
+
+    useEffect( ()=>{
+        updatePage()
+    },[pageInfo]);
 
     let updatePage = () =>{
         axios.get(`https://blog-tutoring.herokuapp.com/posts?page=${pageInfo.page}&size=${pageInfo.size}`)
@@ -41,7 +45,7 @@ const PostList = (props) => {
                     props.history.push('/posts/');
                 }
                 else{
-                    //
+                    //unhandled exception
                 }
                 alert(e.response.data.message)
             });
@@ -74,11 +78,19 @@ const PostList = (props) => {
         updatePage()
     };
 
+    let goToPrePage = () =>{
+        setPageInfo({
+            page: pageInfo.page-1,
+            size: pageInfo.size
+        })
+        updatePage()
+    };
+
     return (
         <div>
             <table align = "center" border="1"  width ="1000" height="200">
                 <thead>
-                <tr align = "center" bgcolor = "#d3d3d3">
+                <tr align = "center" bgcolor = "e6e6fa">
                     <th>ID</th>
                     <th>제목</th>
                     <th>내용</th>
@@ -92,8 +104,10 @@ const PostList = (props) => {
                 {postInfo(posts)}
                 </tbody>
             </table>
-        현재 페이지 {`${posts.page.number+1}/${posts.page.totalPages}`}
-        <button onClick={goToNextPage}>다음페이지</button>
+            <p></p>
+            <button onClick={goToPrePage}>이전페이지</button>
+            현재 페이지 {`${posts.page.number+1}/${posts.page.totalPages}`}
+            <button onClick={goToNextPage}>다음페이지</button>
         </div>
     )
 };

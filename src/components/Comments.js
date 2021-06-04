@@ -69,7 +69,7 @@ const Comments = (props) => {
     return (
         <div>
             {comments.map(comment => (<Comment comment = {comment} list={'dfs'}/>))}
-            <input type="text" size="100" placeholder="댓글을 입력해주세요" value={comment.content} onChange={(updateComment)} onKeyPress={pressEnter}/>
+            <input type="text" size="100" placeholder="댓글을 입력해주세요(100자 이내)" value={comment.content} onChange={(updateComment)} onKeyPress={pressEnter}/>
             <button onClick={addComment}>댓글쓰기</button>
         </div>
     );
