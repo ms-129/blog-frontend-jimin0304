@@ -44,7 +44,7 @@ const WritePost = (props) => {
     return (
         <div>
                 <table align="center" border="1" width="900" height="300">
-                    <tr align="center">
+                    <tr align="center" bgcolor="#fafad2">
                         <th> 제목 :
                             <input type="text" size="100" placeholder="제목을 입력해주세요(100자 이내)" value={post.title} onChange={(updatePostTitle)} onKeyPress={pressEnter}/>
                         </th>
