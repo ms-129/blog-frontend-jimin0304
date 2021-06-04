@@ -43,14 +43,14 @@ const WritePost = (props) => {
 
     return (
         <div>
-                <table align="center" border="1" width="1000" height="400">
+                <table align="center" border="1" width="900" height="300">
                     <tr align="center">
                         <th> 제목 :
-                            <input type="text" size="100" placeholder="제목을 입력해주세요" value={post.title} onChange={(updatePostTitle)} onKeyPress={pressEnter}/>
+                            <input type="text" size="100" placeholder="제목을 입력해주세요(100자 이내)" value={post.title} onChange={(updatePostTitle)} onKeyPress={pressEnter}/>
                         </th>
                     </tr>
                     <tr align="center" height="500">
-                        <textarea type="text" rows="35" cols="140" placeholder="글을 입력해주세요" value={post.subject} onChange={(updatePostSubject)} onKeyPress={pressEnter}/>
+                        <textarea type="text" rows="32" cols="140" placeholder="글을 입력해주세요" value={post.subject} onChange={(updatePostSubject)} onKeyPress={pressEnter}/>
                         <button onClick={addPost}>등록하기</button>
                     </tr>
                 </table>

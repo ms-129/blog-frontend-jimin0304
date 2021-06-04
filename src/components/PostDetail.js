@@ -33,7 +33,7 @@ const PostDetail = (props) => {
 
     return (
         <div>
-        <table align="center" border="1" width="1000" height="400">
+        <table align="center" border="1" width="1000" height="350">
             <tr align="center" bgcolor="#fafad2">
                 <th colSpan="3">제목 : {post.title}</th>
             </tr>

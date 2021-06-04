@@ -90,7 +90,7 @@ const PostList = (props) => {
         <div>
             <table align = "center" border="1"  width ="1000" height="200">
                 <thead>
-                <tr align = "center" bgcolor = "#d3d3d3">
+                <tr align = "center" bgcolor = "e6e6fa">
                     <th>ID</th>
                     <th>제목</th>
                     <th>내용</th>
