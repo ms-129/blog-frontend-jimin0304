@@ -4,7 +4,7 @@ import axios from "axios";
 
 const Comments = (props) => {
     const [comment, setComment] = useState([{
-        userId: 1,
+        userId: "1",
         content: ""
     }]);
     const [comments, setComments] = useState([]);

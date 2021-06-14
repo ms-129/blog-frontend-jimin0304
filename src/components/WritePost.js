@@ -28,12 +28,12 @@ const WritePost = (props) => {
         alert(`${post.title}을(를) 등록합니다.`);
         axios.post("https://blog-tutoring.herokuapp.com/posts", post)
             .then(res => {
-                console.log(res.data);
-                props.history.push(`/posts/${res.data.postId}`);
-            })
-            .catch(e => {
-                console.log(e.response);
-                console.log(e.response.status);
+                    console.log(res.data);
+                    props.history.push(`/posts/${res.data.postId}`);
+                })
+                    .catch(e => {
+                        console.log(e.response);
+                        console.log(e.response.status);
                 alert(e.response.data.message)
             })};
 

@@ -18,9 +18,9 @@ const WritePostPage = (props) => {
 
             <div className="container">
                 <div className="big-nav">
-                    <div className="login">
+{/*                    <div className="login">
                         <p>로그인 창</p>
-                    </div>
+                    </div>*/}
                     <ul className="nav-list">
                         <li className="nav-item"><a href="" className="nav-link">자유게시판</a></li>
                         <li className="nav-item"><a href="" className="nav-link">핫플레이스</a></li>
@@ -40,9 +40,9 @@ const WritePostPage = (props) => {
                     <WritePost classNmae="lists" postId={props.match.params.postId} history = {props.history}/>
                 </div>
 
-                <div className="chatting">
+{/*                <div className="chatting">
                     <p>네프 채팅 레이아웃 맛보기</p>
-                </div>
+                </div>*/}
             </div>
 
             <div className="footer">

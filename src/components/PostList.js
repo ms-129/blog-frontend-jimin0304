@@ -62,8 +62,8 @@ const PostList = (props) => {
                         </Link>
                     </th>
                     <th>{posts.subject}</th>
-                    <th>{posts.commentNum}</th>
-                    <th>{posts.userId}</th>
+{/*                    <th>{posts.commentNum}</th>
+                    <th>{posts.userId}</th>*/}
                     <th>{posts.viewCount}</th>
                     <th>{posts.createdDate}</th>
                 </tr>
@@ -94,8 +94,8 @@ const PostList = (props) => {
                     <th>ID</th>
                     <th>제목</th>
                     <th>내용</th>
-                    <th>댓글수</th>
-                    <th>작성자</th>
+{/*                    <th>댓글수</th>
+                    <th>작성자</th>*/}
                     <th>조회수</th>
                     <th>작성일</th>
                 </tr>

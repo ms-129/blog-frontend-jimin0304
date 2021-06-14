@@ -16,9 +16,9 @@ const PostListPage = (props) => {
 
             <div className="container">
                 <div className="big-nav">
-                    <div className = "login">
+{/*                    <div className = "login">
                         <p>로그인 창</p>
-                    </div>
+                    </div>*/}
                     <ul className="nav-list">
                         <li className="nav-item"><a href="" className="nav-link">자유게시판</a></li>
                         <li className="nav-item"><a href="" className="nav-link">핫플레이스</a></li>
@@ -34,12 +34,23 @@ const PostListPage = (props) => {
                             글쓰기
                         </Link>
                     </button>
+                    <pre/>
+                    <button>
+                        <Link to={'/first'}>
+                            첫화면
+                        </Link>
+                    </button>
                     <PostList className="lists"/>
                 </div>
 
-                <div className="chatting">
+                {/*<div className="chatting">
                     <p>네프 채팅 레이아웃 맛보기</p>
-                </div>
+                    <butto>
+                        <Link to={'/chat'}>
+                            채팅방입장
+                        </Link>
+                    </butto>
+                </div>*/}
             </div>
 
             <div class = "footer">

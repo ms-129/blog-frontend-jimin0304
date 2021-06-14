@@ -5,7 +5,7 @@ const Comment = (props) => {
             <div>
                 <table align="center">
                     <tr>
-                        <td>{props.comment.userId}</td>
+{/*                        <td>{props.comment.userId}</td>*/}
                         <td>{props.comment.content}</td>
                         <td>{props.comment.date}</td>
                     </tr>

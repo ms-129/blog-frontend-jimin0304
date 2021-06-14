@@ -45,9 +45,9 @@ const PostDetail = (props) => {
             <tr align="center" height="500">
                 <td colSpan="3">{post.subject}</td>
             </tr>
-            <tr>
+{/*            <tr>
                 <td colSpan="3">댓글 수 : {post.commentNum}</td>
-            </tr>
+            </tr>*/}
         </table>
     </div>
     )
