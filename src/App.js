@@ -15,7 +15,7 @@ function App() {
             <Route exact path="/write/posts" component={WritePostPage}></Route>
         </Router>
     </div>
-  );
+    );
 }
 
 export default App;
